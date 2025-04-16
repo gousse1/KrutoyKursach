@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head> <!--Голова-->
+        <meta charset="UTF-8"> <!--Кодировка-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Адаптив-->
+        <title>Western Rush</title>
+        <link rel ="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="header-top">
+                    <div class="branding">
+                        <img src="media/logo.jpg" alt="Western Rush Logo" class="logo-img">
+                        <div class="brand-text">
+                            <div class="slogan">Когда мечта становится ближе</div>
+                            <div class="brand-name">Western Rush</div>
+                        </div>
+                    </div>
+                    
+                    <nav class="nav-links" id="navLinks">
+                        <a href="#about">О команде</a>
+                        <a href="#advantages">Достоинства</a>
+                        <a href="#catalog">Каталог</a>
+                        <a href="#production">Производство</a>
+                        <a href="#contacts">Контакты</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <section class="section-about" id="about">
+            <h1>О команде</h1>
+            <p>Мы – «Western Rush», команда фанатов, дизайнеров и мастеров, которая превращает вашу страсть к бейсболу в уникальные вещи. С 2010 года шьем кепки, печатаем футболки и собираем коллекционные предметы.</p>
+            
+            <h2>Почему мы?</h2>
+            <ul>
+                <li>Знаем игру изнутри – наши дизайнеры работали с MLB-клубами</li>
+                <li>Качество как у про-игроков – используем те же материалы, что и для командной экипировки</li>
+                <li>Эксклюзивные коллаборации – ограниченные серии с легендами</li>
+                <li>Фанатский подход – каждая деталь продумана: от строчки на перчатке до гравировки на бите</li>
+            </ul>
+        </section>
+
+        <!-- Секция с интерактивной картой -->
+        <section class="map-section">
+            <div class="section-container">
+                <h2 class="section-title">Мы на карте</h2>
+                
+                <div id="map" class="map-container"></div>
+            </div>
+        </section>
+
+        <!-- API Яндекс.Карт -->
+        <script src="https://api-maps.yandex.ru/2.1/?apikey=1441bfc7-7df1-4d0f-a6d6-9fb5e3bb48a4&lang=ru_RU" type="text/javascript"></script>
+        <script src="javasript/yaAPI.js"></script>
+
+        <section id="advantages">
+            <h1>Достоинства</h1>
+            
+            <div class="advantage" data-num="1.">
+                <h3>Аутентичный дизайн</h3>
+                <p>Разрабатываем вместе с бывшими игроками MLB.</p>
+            </div>
+            
+            <div class="advantage" data-num="2.">
+                <h3>Профессиональное качество</h3>
+                <p>Используем материалы, как для официальной экипировки клубов.</p>
+            </div>
+            
+            <div class="advantage" data-num="3.">
+                <h3>Эксклюзивные коллекции</h3>
+                <p>Лимитированные серии и персонализация под заказ.</p>
+            </div>
+            
+            <div class="advantage" data-num="4.">
+                <h3>Удобство для фанатов</h3>
+                <p>Быстрая доставка и гарантия возврата.</p>
+            </div>
+            
+            <div class="advantage" data-num="5.">
+                <h3>Современные технологии</h3>
+                <p>AR-метки на одежде и усовершенствованные винтажные модели.</p>
+            </div>
+        </section>
+
+        <section class="catalog" id="catalog">
+            <div class="container">
+                <h2 class="section-title">Наш Каталог</h2>
+                
+                <div class="products">
+                    <!-- Товар 1 -->
+                    <div class="product-card">
+                        <img src="media/MLMKEPKA.jpg" alt="Бейсболка MLB" class="product-image">
+                        <div class="product-content">
+                            <h3 class="product-title">Бейсболка MLB</h3>
+                            <p class="product-description">Официальная лицензированная кепка с логотипом команды</p>
+                            <div class="product-footer">
+                                <div class="product-price">3 990 ₽</div>
+                                <button class="buy-btn">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Товар 2 -->
+                    <div class="product-card">
+                        <img src="media/yankies.jpg" alt="Футболка Yankees" class="product-image">
+                        <div class="product-content">
+                            <h3 class="product-title">Футболка Yankees</h3>
+                            <p class="product-description">Классическая футболка с принтом, 100% хлопок</p>
+                            <div class="product-footer">
+                                <div class="product-price">4 590 ₽</div>
+                                <button class="buy-btn">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Товар 3 -->
+                    <div class="product-card">
+                        <img src="media/perch.jpg" alt="Бейсбольная перчатка" class="product-image">
+                        <div class="product-content">
+                            <h3 class="product-title">Бейсбольная перчатка</h3>
+                            <p class="product-description">Профессиональная перчатка из натуральной кожи</p>
+                            <div class="product-footer">
+                                <div class="product-price">8 990 ₽</div>
+                                <button class="buy-btn">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Товар 4 -->
+                    <div class="product-card">
+                        <img src="media/bita.jpg" alt="Коллекционная бита" class="product-image">
+                        <div class="product-content">
+                            <h3 class="product-title">Коллекционная бита</h3>
+                            <p class="product-description">Ручная работа из ясеня с гравировкой</p>
+                            <div class="product-footer">
+                                <div class="product-price">12 490 ₽</div>
+                                <button class="buy-btn">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Призыв к действию -->
+                <div class="cta">
+                    <h3 class="cta-title">Готовы сделать заказ?</h3>
+                    <p class="cta-text">Выберите свой стиль и присоединитесь к сообществу настоящих фанатов!</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="modal-overlay" id="orderModal">
+            <div class="modal">
+                <div class="modal-header">
+                    <h3 class="modal-title">Оформление заказа</h3>
+                    <button class="close-btn" id="closeModal">&times;</button>
+                </div>
+                
+                <form id="orderForm">
+                    <input type="hidden" id="productName">
+                    <input type="hidden" id="productPrice">
+                    
+                    <div class="form-group">
+                        <label for="name">Ваше имя *</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Телефон *</label>
+                        <input type="tel" id="phone" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="address">Адрес доставки</label>
+                        <input type="text" id="address">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="quantity">Количество</label>
+                        <select id="quantity">
+                            <option value="1">1 шт</option>
+                            <option value="2">2 шт</option>
+                            <option value="3">3 шт</option>
+                            <option value="4">4 шт</option>
+                            <option value="5">5 шт</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="comment">Комментарий к заказу</label>
+                        <textarea id="comment" rows="3"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-order">Подтвердить заказ</button>
+                </form>
+            </div>
+        </div>
+
+        <section class="production-section" id="production">
+            <div class="container">
+                <h1 class="section-title">Производство</h1>
+                
+                <p class="intro-text">
+                    Мы создаем атрибутику для настоящих фанатов бейсбола. Каждый продукт проходит строгий контроль качества на всех этапах производства.
+                </p>
+                
+                <div class="features-block">
+                    <h2 class="block-title">Ключевые особенности:</h2>
+                    
+                    <ul class="features-list">
+                        <li class="feature-item">Используем только сертифицированные материалы</li>
+                        <li class="feature-item">Современное оборудование для точного воспроизведения деталей</li>
+                        <li class="feature-item">Ручная проверка каждого изделия перед отправкой</li>
+                        <li class="feature-item">Соблюдение стандартов MLB для клубной атрибутики</li>
+                    </ul>
+                </div>
+                
+                <hr class="divider">
+                
+                <div class="steps-block">
+                    <h2 class="block-title">Этапы создания:</h2>
+                    
+                    <ol class="steps-list">
+                        <li class="step-item">Разработка дизайна с учетом пожеланий фанатов</li>
+                        <li class="step-item">Подбор качественных материалов</li>
+                        <li class="step-item">Предварительное изготовление</li>
+                        <li class="step-item">Многоступенчатый контроль качества</li>
+                        <li class="step-item">Упаковка с защитой при транспортировке</li>
+                    </ol>
+                </div>
+                
+                <p class="conclusion-text">
+                    Мы гордимся тем, что наша продукция соответствует высочайшим стандартам бейсбольной индустрии.
+                </p>
+            </div>
+        </section>
+
+        <section class="contacts-section" id="contacts">
+            <div class="container">
+                <h2 class="section-title">Контакты</h2>
+                
+                <div class="contact-info">
+                    <h3 class="block-title">Контактная информация</h3>
+                    
+                    <div class="contact-item">
+                        <h3>Адрес:</h3>
+                        <p>г. Волгоград, пр. Ленина, 2</p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <h3>Телефон:</h3>
+                        <p>+7 (123) 456-78-90</p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <h3>Email:</h3>
+                        <p>info@westernrush.ru</p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <h3>Часы работы:</h3>
+                        <p>Пн-Пт: 10:00 - 20:00</p>
+                        <p>Сб-Вс: 11:00 - 18:00</p>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3 class="form-title">Остались вопросы?</h3>
+                    
+                    <form id="feedbackForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Ваше имя</label>
+                                <input type="text" id="name">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Ваш email</label>
+                                <input type="email" id="email">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Ваше сообщение</label>
+                            <textarea id="message"></textarea>
+                        </div>
+                        
+                        <button type="button" class="submit-btn" id="sendBtn">Отправить сообщение</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <script src="javasript/JavaScript.js"></script>
+
+        <footer>
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h3>Western Rush</h3>
+                    <p>Когда мечта становится ближе</p>
+                    <div>
+                        <div class="contact-item">
+                            <span>Адрес: г. Волгоград, пр. Ленина, 2</span>
+                        </div>
+                        <div class="contact-item">
+                            <span>Телефон: +7 (123) 456-78-90</span>
+                        </div>
+                        <div class="contact-item">
+                            <span>Email: info@westernrush.ru</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Социальные сети</h3>
+                    <a href="https://vk.com/gousse16">VK</a>
+                    <a href="#">Telegram</a>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                © 2025 Western Rush. Все права защищены.
+            </div>
+        </footer>
+    </body>
